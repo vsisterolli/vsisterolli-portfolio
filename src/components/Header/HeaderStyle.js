@@ -38,7 +38,7 @@ const HeaderStyle = styled.header`
             font-size: 0.8em;
         }
     }
-    @media (max-width: 600px) {
+    @media (max-width: 650px) {
         justify-content: center;
         h1 {
             font-size: 2em;

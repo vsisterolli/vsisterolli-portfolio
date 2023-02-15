@@ -89,8 +89,9 @@ const TecnologiesStyle = styled.section`
         color: ${textColor};
         text-align: center;        
     }
-
-
+    @media (max-width: 940px) {
+        padding-top: 250px;
+    }
 `
 
 export default TecnologiesStyle;
