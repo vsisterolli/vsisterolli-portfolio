@@ -8,9 +8,13 @@ const AboutMeStyle = styled.section`
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    .title {
+        position: absolute;
+        top: 15%;
+    }
     h1 {
-        margin-top: 110px;
         color: ${textColor};
         text-align: center;
         font-size: 2.6em;

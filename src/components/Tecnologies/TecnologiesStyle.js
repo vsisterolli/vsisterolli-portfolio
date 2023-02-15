@@ -2,14 +2,23 @@ import styled from "styled-components";
 import { primaryColor, secondaryColor, textColor } from "../../assets/styles/colors";
 
 const TecnologiesStyle = styled.section`
-    width: 100vw;
     min-height: 100vh;
+    width: 100vw;
     background-color: ${primaryColor};
     padding-top: 110px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     clear: both;
+    .titles {
+        position: absolute;
+        top: 10%;
+        width: 100%;
+    }
     h1 {
         color: ${textColor};
-        text-align: center;
+        text-align: center;;
         font-size: 2.6em;
         font-family: "Inter Tight";
     }
@@ -22,6 +31,7 @@ const TecnologiesStyle = styled.section`
         margin-bottom: 20px;
     }
     .all-tecnologies {
+        justify-self: center;
         display: flex;
         align-items: center;
         flex-direction: row;

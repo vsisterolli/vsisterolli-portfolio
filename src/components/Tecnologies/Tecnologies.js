@@ -21,8 +21,10 @@ export default function Tecnologies() {
 
     return (    
         <TecnologiesStyle>
-            <h1>TECNOLOGIAS</h1>
-            <h2>Tecnologias que domino e utilizo nos meus projetos</h2>
+            <div className="titles">
+                <h1>TECNOLOGIAS</h1>
+                <h2>Tecnologias que domino e utilizo nos meus projetos</h2>
+            </div>
             <div className="all-tecnologies">
                 <div className="tecnologies-container">
                     <h3>Front-end</h3>
