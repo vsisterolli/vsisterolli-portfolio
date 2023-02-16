@@ -32,8 +32,9 @@ const ProjectStyle = styled.div`
         border: solid 2px ${props => props.theme[0] === "dark" ? darkBorderColor : brightBorderColor};
         border-radius: 20%;
         outline: 1px solid black;
-        background-image: url("https://i.imgur.com/oKLnL01.png");
+        background-image: url(${props => props.image});
         background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
     }
 `

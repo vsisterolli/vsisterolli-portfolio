@@ -27,8 +27,8 @@ export default function Contact() {
                 </div>
               </div>
               <div className="icons">
-                  <a href="https://www.linkedin.com/in/victorsisterolli/" target="_blank"><img src={linkedinIcon}/></a>  
-                  <a href="https://github.com/vsisterolli" target="_blank"><img src={githubIcon}/></a>
+                  <a href="https://www.linkedin.com/in/victorsisterolli/" target="_blank" rel="noreferrer"><img src={linkedinIcon} alt="linkedin icon"/></a>  
+                  <a href="https://github.com/vsisterolli" target="_blank" rel="noreferrer"><img src={githubIcon} alt="github icon"/></a>
               </div>
           </div>
         </ContactStyle>

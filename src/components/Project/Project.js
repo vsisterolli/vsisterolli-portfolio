@@ -4,9 +4,10 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import StyledModal from "../Modal/Modal";
 import Carousel from "../Carousel/Carousel";
+import { getValue } from "@testing-library/user-event/dist/utils";
 
 
-export default function Project(name) {
+export default function Project({value}) {
         
     function openModal() {
         setIsOpen(true);
@@ -19,8 +20,8 @@ export default function Project(name) {
     const [modalIsOpen, setIsOpen] = React.useState(false);
     
     return (
-        <ProjectStyle className="big-on-hover">
-            <h2 onClick={openModal}>Linkr</h2>
+        <ProjectStyle className="big-on-hover" image={value.images[0]}>
+            <h2 onClick={openModal}>{value.name}</h2>
             <div className="portrait" onClick={openModal}></div>
             <StyledModal
                 isOpen={modalIsOpen}
@@ -28,18 +29,11 @@ export default function Project(name) {
                 contentLabel="Project Modal"
                 className="Modal"
             >
-                <h1>Linkr</h1>
-                <Carousel images={["https://i.imgur.com/YqnhD5t.png", "https://i.imgur.com/YqnhD5t.png"]}/>
-                <p>O Linkr é uma rede social de compartilhamento de links com layout responsivo inspirada pelo twitter. Possuí diversas funcionalidades de uma rede social: cadastro/login, timeline de carregamento infinito que prioriza posts de quem você segue, trending, perfis, etc. Foi construído por um total de 5 pessoas utilizando o método SCRUM. 
-                <br/><br/>
-                O front-end foi construído utilizando React e suas bibliotecas, como Axios, Styled-Components e outras.
-                <br/><br/>
-                O back-end foi construído utilizando Node, com Express.js e PostgresSQL;
-                <br/><br/>
-                Atuei na construção e revisão de features majoritárias, como a página de perfil e pesquisa de usuários. Tanto na parte do front-end quanto na parte do back-end.
-                </p>
+                <h1>{value.name}</h1>
+                <Carousel images={value.images}/>
+                <p>{value.description}</p>
                 <div className="link-project">
-                    <a href="https://linkr-front-sandy.vercel.app/" target="_blank">Dê uma olhada!</a>
+                    <a href={value.deploy} target="_blank" rel="noreferrer">Dê uma olhada!</a>
                 </div>
             </StyledModal>
         </ProjectStyle>

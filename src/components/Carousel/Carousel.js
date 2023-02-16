@@ -70,7 +70,7 @@ const Dot = styled.div`
   cursor: pointer;
 `;
 
-const Carousel = () => {
+const Carousel = ({images}) => {
   const [currentImage, setCurrentImage] = useState(0);
 
   const handleDotClick = (index) => {
@@ -80,7 +80,7 @@ const Carousel = () => {
   return (
     <Wrapper currentImage={currentImage}>
       <SlideContainer>
-        <img src={images[currentImage]}/>
+        <img src={images[currentImage]} alt="website slide-show"/>
       </SlideContainer>
       <DotContainer>
         {images.map((_, index) => (

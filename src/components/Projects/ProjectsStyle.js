@@ -18,6 +18,13 @@ const ProjectsStyle = styled.section`
         font-size: 2.6em;
         font-family: "Inter Tight";
     }
+    p {
+        margin: 20px;
+        color: ${primaryTextColor};
+        text-align: center;
+        font-size: 1.2em;
+        font-family: "Roboto";
+    }
     .title {
         position: absolute;
         top: 10%;

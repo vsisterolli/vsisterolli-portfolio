@@ -31,19 +31,19 @@ export default function Tecnologies() {
                     <div className="icons">
                         <div className="tecnology htmlIcon">
                             <h4>HTML</h4>
-                            <img src={htmlIcon}/>
+                            <img src={htmlIcon} alt="HTML5 Icon"/>
                         </div>
                         <div className="tecnology">
                             <h4>CSS</h4>
-                            <img src={cssIcon}/>
+                            <img src={cssIcon} alt="CSS3 Icon"/>
                         </div>
                         <div className="tecnology">
                             <h4>JavaScript</h4>
-                            <img src={javascriptIcon}/>
+                            <img src={javascriptIcon} alt="JavaScript icon"/>
                         </div>
                         <div className="tecnology">
                             <h4>React</h4>
-                            <img src={reactIcon}/>
+                            <img src={reactIcon} alt="React icon"/>
                         </div>
                     </div>
                 </div>
@@ -52,15 +52,15 @@ export default function Tecnologies() {
                     <div className="icons">
                         <div className="tecnology">
                             <h4>Node</h4>
-                            <img src={nodeIcon}/>
+                            <img src={nodeIcon} alt="Node Icon"/>
                         </div>
                         <div className="tecnology">
                             <h4>TypeScript</h4>
-                            <img src={typescriptIcon}/>
+                            <img src={typescriptIcon} alt="Typescript Icon"/>
                         </div>
                         <div className="tecnology">
                             <h4>Python</h4>
-                            <img src={pythonIcon}/>
+                            <img src={pythonIcon} alt="PythonIcon"/>
                         </div>
                     </div>
                 </div>
@@ -69,19 +69,19 @@ export default function Tecnologies() {
                     <div className="icons">
                         <div className="tecnology">
                             <h4>SQL</h4>
-                            <img src={sqlIcon}/>
+                            <img src={sqlIcon} alt="Sql Icon"/>
                         </div>
                         <div className="tecnology">
                             <h4>PostgreSQL</h4>
-                            <img src={postgresIcon}/>
+                            <img src={postgresIcon} alt="Postgres Icon"/>
                         </div>
                         <div className="tecnology">
                             <h4>MongoDB</h4>
-                            <img src={mongodbIcon}/>
+                            <img src={mongodbIcon} alt="MongoDb Icon"/>
                         </div>
                         <div className="tecnology">
                             <h4>Prisma</h4>
-                            <img src={prismaIcon}/>
+                            <img src={prismaIcon} alt="Prisma Icon"/>
                         </div>
                     </div>
                 </div>
@@ -90,11 +90,11 @@ export default function Tecnologies() {
                     <div className="icons">
                         <div className="tecnology">
                             <h4>Jest</h4>
-                            <img src={jestIcon}/>
+                            <img src={jestIcon} alt="Jest Icon"/>
                         </div>
                         <div className="tecnology">
                             <h4>Selenium</h4>
-                            <img src={seleniumIcon}/>
+                            <img src={seleniumIcon} alt="Selenium Icon"/>
                         </div>
                     </div>
                 </div>
@@ -103,11 +103,11 @@ export default function Tecnologies() {
                     <div className="icons">
                         <div className="tecnology">
                             <h4>AWS</h4>
-                            <img src={awsIcon}/>
+                            <img src={awsIcon} alt="AWS Icon"/>
                         </div>
                         <div className="tecnology">
                             <h4>Docker</h4>
-                            <img src={dockerIcon}/>
+                            <img src={dockerIcon} alt="Docker Icon"/>
                         </div>
                     </div>
                 </div>

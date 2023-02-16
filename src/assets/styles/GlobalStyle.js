@@ -4,6 +4,9 @@ const GlobalStyle = createGlobalStyle`
     * {
         box-sizing: border-box;
     }
+    p {
+        white-space: pre-line;
+    }
     html {
         scroll-behavior: smooth;
     }
