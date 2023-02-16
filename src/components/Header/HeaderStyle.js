@@ -51,7 +51,7 @@ const HeaderStyle = styled.header`
             opacity: ${props => props.loading ? "60%" : "100%"};
         }
     }
-    @media (max-width: 900px) {
+    @media (max-width: 1050px) {
         h1 {
             font-size: 1.6em;
         }
@@ -59,7 +59,7 @@ const HeaderStyle = styled.header`
             font-size: 0.8em;
         }
     }
-    @media (max-width: 650px) {
+    @media (max-width: 850px) {
         justify-content: center;
         h1 {
             font-size: 2em;
