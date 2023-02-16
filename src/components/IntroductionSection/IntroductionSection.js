@@ -44,7 +44,7 @@ export default function IntroductionSection() {
     }, []) 
 
     return (    
-        <IntroductionSectionStyle buttonDisplay={buttonDisplay}>
+        <IntroductionSectionStyle id="introduction" buttonDisplay={buttonDisplay}>
           <h1>{firstString}</h1>
           <h1>{secondString}</h1>  
           <a href="#about-me" className={buttonClass}>

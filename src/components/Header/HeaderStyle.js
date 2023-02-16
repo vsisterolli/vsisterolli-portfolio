@@ -24,6 +24,13 @@ const HeaderStyle = styled.header`
         margin-left: 20px;
         cursor: pointer;
     }
+    a {
+        font-family: "Roboto";
+        font-weight: bold;
+        cursor: pointer;
+        color: ${primaryTextColor};
+        text-decoration: none;
+    }
     h1 {
         color: white;
         font-size: 2.6em;

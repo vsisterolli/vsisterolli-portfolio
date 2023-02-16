@@ -6,6 +6,9 @@ import Projects from "./components/Projects/Projects"
 import Tecnologies from "./components/Tecnologies/Tecnologies"
 import React from "react"
 import { ThemeContext } from "styled-components"
+import Contact from "./components/Contact/Contact"
+import { ToastContainer, toast } from 'react-toastify';
+
 
 export default function App() {
 
@@ -15,11 +18,15 @@ export default function App() {
         <>
             <ThemeContext.Provider value={themeSetter}>
                 <GlobalStyle/>
+                <ToastContainer
+                    theme={themeSetter[0] === "dark" ? "dark" : "light"}
+                />
                 <Header/>
                 <IntroductionSection/>
                 <AboutMe/>
                 <Tecnologies/>
                 <Projects/>
+                <Contact/>
             </ThemeContext.Provider>
         </>
         )

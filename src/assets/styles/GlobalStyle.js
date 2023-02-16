@@ -143,7 +143,9 @@ const GlobalStyle = createGlobalStyle`
         border-radius: 10px;
         border: 3px none #383838;
     }
-
+    :root {
+        --toastify-font-family: "Roboto";
+    }
 `
 
 export default GlobalStyle;

@@ -20,7 +20,7 @@ import dockerIcon from "../../assets/images/docker-icon.png"
 export default function Tecnologies() {
 
     return (    
-        <TecnologiesStyle>
+        <TecnologiesStyle id="tecnologies">
             <div className="titles">
                 <h1>TECNOLOGIAS</h1>
                 <h2>Tecnologias que domino e utilizo nos meus projetos</h2>

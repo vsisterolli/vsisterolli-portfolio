@@ -15,14 +15,14 @@ export default function AboutMe() {
 
     return (
         <HeaderStyle>
-            <h1>VSISTEROLLI</h1>
+            <a href="#introduction"><h1>VSISTEROLLI</h1></a>
             <div className="options">
                 <li onClick={changeTheme}><ion-icon name={icon}></ion-icon></li>
                 <ul>
-                    <li>INTRODUÇÃO</li>
-                    <li>SOBRE MIM</li>
-                    <li>TECNOLOGIAS</li>
-                    <li>PROJETOS</li>
+                    <li><a href="#introduction">INTRODUÇÃO</a></li>
+                    <li><a href="#about-me">SOBRE MIM</a></li>
+                    <li><a href="#tecnologies">TECNOLOGIAS</a></li>
+                    <li><a href="#projects">PROJETOS</a></li>
                     <li>CONTATO</li>
                 </ul>
             </div>
