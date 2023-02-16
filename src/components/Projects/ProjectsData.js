@@ -46,4 +46,52 @@ const projectsData = [
 	}
 ];
 
+export const englishProjectsData = [
+	{
+		name: "Linkr",
+		images: ["https://i.imgur.com/2bPnKY2.png", "https://i.imgur.com/qQ1m4kC.png", "https://i.imgur.com/ZYncCQ8.png", "https://i.imgur.com/oUYrDoW.png", "https://i.imgur.com/8hYQzQd.png"],
+		description: `Linkr it's a link-sharing social media with a responsive layout inspired by Twitter. It has diverse functionalities of a usual social media: register/login, infinite loading timeline which prioritizes posts that are of your interest, trending, profiles, etc. It was built by a total of 5 people using the SCRUM method.\n\n  
+                      Front-end was built using React and it's libraries, such as Axios, Styled-Components and others.\n\n
+					  Back-end was built using Node, with Express.js and PostgreSQL.\n\n
+					  I acted in the building and revision of majoritary features, such as the profile search and profile page, both back-end and front-end structures.
+					  `,
+		deploy: "https://linkr-front-sandy.vercel.app/"
+	},
+	{
+		name: "Drivent",
+		images: ["https://i.imgur.com/jzRKUwy.png", "https://i.imgur.com/aXs3Qlp.png", "https://i.imgur.com/4e0bnMX.png"],
+		description: `Driven.t it's an event management service, facilitating ticket acquisitions, accommodation, and certificates to the public. It has a lot of functionalities such as register/login, visualization of events that are near to occur, certificates generation, rents of rooms that are near to where the event is happening, etc.\n\n
+					  The API (back-end) was built using Node, Express, PostgreSQL, Prisma, Jest, Typescript, Eslint, Prettier, and other tools.\n\n
+					  I was responsible for the implementation of new routes and features, and also, create unitary tests for routes that had been created previously, to assure the well-functioning of the application.
+					  `,
+		deploy: "https://github.com/vsisterolli/projeto__calvs-drivent__p1"
+	},
+	{
+		name: "E-clothing",
+		images: ["https://i.imgur.com/jjd15pH.jpg", "https://i.imgur.com/ImzptPY.jpg", "https://i.imgur.com/ik9Opny.jpg", "https://i.imgur.com/lnNuyh8.jpg", "https://i.imgur.com/EmrdcJD.jpg", "https://i.imgur.com/xpwvmCr.png"],
+		description:`E-clothing it's an clothing e-commerce. The website has a mobile layout with all functionalities of modern e-commerces: product listing, filter, register/login, cart, etc.\n\n
+					 I was entirely responsible for the creation of the website API (back-end), which uses Node combined with Express.js and MongoDb, file manipulation with multer, automatic sending of email, and others.\n\n
+					 I also was responsible for the creation of pages and features to the application front-end, such as the revision of features that had been implemented previously.
+					`,
+		deploy: "https://projeto15-e-clothing-front.vercel.app/"
+	},
+	{
+		name: "Shortly",
+		images: ["https://i.imgur.com/0EMctVh.png", "https://i.imgur.com/hMTD6U1.png", "https://i.imgur.com/sQWcHzY.png", "https://i.imgur.com/wWds8bR.png", "https://i.imgur.com/UHPlJNf.png"],
+		description: `Shortly it's a link shortener website. Main functionalities include register/login, link shortening, real-time visualization of the amount of access your link is receiving, edition/deletion of the links created by the user, a weekly ranking with the most accessed links, etc.\n\n
+					  I was entirely responsible for the creation of the website API (back-end). I created it using MongoDB as the database along with Node and Express to manage requisitions.
+					 `,
+		deploy: "https://github.com/vsisterolli/shortly"
+	},
+	{
+		name: "This portfolio!",
+		images: ["https://i.imgur.com/Rmk0FLy.png"],
+		description: `If you came this far, I'm really thankful for your interest. This portfolio it's the grouping of some things I achieved till now so you can know me better.\n\n
+					  This portfolio's a simple website, with a responsive layout, created using React with some of the most interesting libraries: toastify, Styled Components, react-modal, and others. It doesn't use any external API, some images are locally saved and others are saved using imgur.\n\n
+					  I was entirely responsible for its creation, since the idea, layout composition, and coding. I really hope that you like what you see.
+					 `,
+		deploy:"https://vsisterolli-portfolio.vercel.app/"
+	}
+];
+
 export default projectsData;

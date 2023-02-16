@@ -1,10 +1,13 @@
 import React from "react";
+import { LanguageContext } from "../../App";
 import IntroductionSectionStyle from "./IntroductionSectionStyle";
 
 export default function IntroductionSection() {
 
-	const initialString = "Olá! Sou o Victor Sisterolli";
-	const descriptionString = "Desenvolvedor Web Fullstack";
+	const language = React.useContext(LanguageContext)[0];
+
+	const initialString = language !== "en" ? "Olá! Sou o Victor Sisterolli" : "Hello! I'm Victor Sisterolli";
+	const descriptionString = language !== "en" ? "Desenvolvedor Web Fullstack" : "A Fullstack Web Developer";
 
 	const [firstString, setFirstString] = React.useState("");
 	const [secondString, setSecondString] = React.useState("");
@@ -41,14 +44,14 @@ export default function IntroductionSection() {
 
 	React.useEffect(() => {
 		simulateTyping(0, 0);
-	}, []); 
+	}, [language]); 
 
 	return (    
 		<IntroductionSectionStyle id="introduction" buttonDisplay={buttonDisplay}>
 			<h1>{firstString}</h1>
 			<h1>{secondString}</h1>  
 			<a href="#about-me" className={buttonClass}>
-				<h2>Saiba mais!</h2>
+				<h2>{language === "en" ? "Know more!" : "Saiba mais!"}</h2>
 				<ion-icon name="chevron-down-outline"></ion-icon>
 			</a>
 		</IntroductionSectionStyle>

@@ -1,12 +1,15 @@
 import ProjectStyle from "./ProjectStyle";
-import React from "react";
+import React, { useContext } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import StyledModal from "../Modal/Modal";
 import Carousel from "../Carousel/Carousel";
+import { LanguageContext } from "../../App";
 
 
 export default function Project({value}) {
         
+	const language = useContext(LanguageContext)[0];
+
 	function openModal() {
 		setIsOpen(true);
 	}
@@ -31,7 +34,7 @@ export default function Project({value}) {
 				<Carousel images={value.images}/>
 				<p>{value.description}</p>
 				<div className="link-project">
-					<a href={value.deploy} target="_blank" rel="noreferrer">Dê uma olhada!</a>
+					<a href={value.deploy} target="_blank" rel="noreferrer">{language === "en" ? "Take a look!" : "Dê uma olhada!"} </a>
 				</div>
 			</StyledModal>
 		</ProjectStyle>

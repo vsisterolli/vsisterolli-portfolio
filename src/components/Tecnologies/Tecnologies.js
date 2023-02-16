@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import TecnologiesStyle from "./TecnologiesStyle";
 import cssIcon from "../../assets/images/css-icon.png";
 import htmlIcon from "../../assets/images/html-icon.png";
@@ -15,15 +15,28 @@ import jestIcon from "../../assets/images/jest-icon.png";
 import seleniumIcon from "../../assets/images/selenium-icon.png";
 import awsIcon from "../../assets/images/aws-icon.png";
 import dockerIcon from "../../assets/images/docker-icon.png";
+import { LanguageContext } from "../../App";
 
 
 export default function Tecnologies() {
 
+	const language = useContext(LanguageContext)[0];
+
 	return (    
 		<TecnologiesStyle id="tecnologies">
 			<div className="titles">
-				<h1>TECNOLOGIAS</h1>
-				<h2>Tecnologias que domino e utilizo nos meus projetos</h2>
+				{
+					language === "en" ?
+					<>
+					<h1>TECHNOLOGIES</h1>
+					<h2>Technologies that I dominate and use in my projects</h2>
+					</>
+					:
+					<>
+					<h1>TECNOLOGIAS</h1>
+					<h2>Tecnologias que domino e utilizo nos meus projetos</h2>
+					</>
+				}
 			</div>
 			<div className="all-tecnologies">
 				<div className="tecnologies-container">
@@ -65,7 +78,7 @@ export default function Tecnologies() {
 					</div>
 				</div>
 				<div className="tecnologies-container">
-					<h3>Banco de dados</h3>
+					<h3>{language === "en" ? "Databases" : "Banco de dados"}</h3>
 					<div className="icons">
 						<div className="tecnology">
 							<h4>SQL</h4>
@@ -86,7 +99,7 @@ export default function Tecnologies() {
 					</div>
 				</div>
 				<div className="tecnologies-container">
-					<h3>Testes</h3>
+					<h3>{language === "en" ? "Tests" : "Testes"}</h3>
 					<div className="icons">
 						<div className="tecnology">
 							<h4>Jest</h4>

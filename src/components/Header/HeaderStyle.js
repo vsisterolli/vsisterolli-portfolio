@@ -42,6 +42,13 @@ const HeaderStyle = styled.header`
         align-items: center;
         ion-icon {
             font-size: 2.6em;
+            margin-left: 20px;
+        }
+        img {
+            width: 64px;
+            margin: 15px;
+            cursor: pointer;
+            opacity: ${props => props.loading ? "60%" : "100%"};
         }
     }
     @media (max-width: 900px) {

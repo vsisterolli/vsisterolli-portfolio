@@ -22,7 +22,7 @@ const IntroductionSectionStyle = styled.section`
         align-items: center;
         position: absolute;
         padding: 15px 30px;
-        border: 1px ${props => props.theme[0] === "dark" ? darkBorderColor : brightBorderColor}; solid;
+        border: solid 1px ${props => props.theme[0] === "dark" ? "silver" : brightBorderColor}; solid;
         text-decoration: none;
         border-radius: 80px;
         top: calc(100vh - 140px);
