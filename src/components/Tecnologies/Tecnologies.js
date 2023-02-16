@@ -112,7 +112,7 @@ export default function Tecnologies() {
 					</div>
 				</div>
 				<div className="tecnologies-container">
-					<h3>Cloud</h3>
+					<h3>{language === "en" ? "Others" : "Outros"}</h3>
 					<div className="icons">
 						<div className="tecnology">
 							<h4>AWS</h4>
