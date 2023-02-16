@@ -20,6 +20,23 @@ const ContactStyle = styled.section`
         font-family: "Roboto";
         margin: 20px 0px;
     }
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+        @media (max-width: 700px) {
+            img {
+                width: 60px;
+            }
+        }        
+    }
+    @media (max-width: 700px) {
+            ion-icon {
+                display: none;
+            }
+    }
     .contact-me {
         color: ${props => props.theme[0] === "dark" ? primaryTextColor : secondaryTextColor};
         margin-top: 8px;

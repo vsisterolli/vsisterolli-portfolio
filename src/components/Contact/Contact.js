@@ -5,6 +5,7 @@ import githubIcon from "../../assets/images/github-icon.png";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { LanguageContext } from "../../App";
+import { Tooltip } from 'react-tooltip';
 
 
 export default function Contact() {
@@ -29,8 +30,8 @@ export default function Contact() {
 					</div>
 				</div>
 				<div className="icons">
-					<a href="https://www.linkedin.com/in/victorsisterolli/" target="_blank" rel="noreferrer"><img src={linkedinIcon} alt="linkedin icon"/></a>  
-					<a href="https://github.com/vsisterolli" target="_blank" rel="noreferrer"><img src={githubIcon} alt="github icon"/></a>
+					<a id="LinkedIn" href="https://www.linkedin.com/in/victorsisterolli/" target="_blank" rel="noreferrer" data-tooltip-content="LinkedIn"><img src={linkedinIcon} alt="linkedin icon"/></a>  
+					<a href="https://github.com/vsisterolli" target="_blank" rel="noreferrer" data-tooltip-content="GitHub"><img src={githubIcon} alt="github icon"/></a>
 				</div>
 			</div>
 		</ContactStyle>
