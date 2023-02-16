@@ -12,7 +12,7 @@ export default function AboutMe() {
 			</div>
 			<div className="description">
 				<img src={mypfp} alt="my profile picture"/>
-				<h2>Olá! Sou o Victor Sisterolli. Desenvolvedor Web Fullstack. Atualmente completando a graduação em Engenharia da Computação pela UNICAMP. Sou apaixonado por jogos e programação competitiva. Tri-medalhista da Olimpíada Brasileira de Informática e aficcionado por algoritmos. Já atuei na elaboração de mais de 20 projetos, incluindo APIs RESTFul e Layouts Responsivos.</h2>
+				<h2>Olá! Sou o Victor Sisterolli. Desenvolvedor Web Fullstack. Atualmente completando a graduação em Engenharia da Computação pela UNICAMP. Sou apaixonado por jogos e programação competitiva. Tri-medalhista da Olimpíada Brasileira de Informática e aficcionado por algoritmos. Já atuei na elaboração de mais de 20 projetos de aplicações web, criando APIs RESTFul e Layouts Responsivos.</h2>
 			</div>
 		</AboutMeStyle>
 	);

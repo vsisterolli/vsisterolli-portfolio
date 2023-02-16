@@ -14,7 +14,7 @@ export default function Contact() {
 	return (    
 		<ContactStyle>
 			<h1>CONTATO</h1>
-			<h2>Tem alguma idéia em mente? Me contate e podemos fazê-la se tornar realidade.</h2>
+			<h2>Tem alguma ideia em mente? Me contate e podemos fazê-la se tornar realidade.</h2>
 			<div className="contact-me">
 				<div>
 					<div className="contact" onClick={() => copyContact("vsisterolli@gmail.com")}>
