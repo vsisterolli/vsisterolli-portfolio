@@ -3,6 +3,8 @@ import AboutMeStyle from "./AboutMeStyle";
 import mypfp from "../../assets/images/my-pfp.jpeg"
 
 export default function AboutMe() {
+
+    
     return (
         <AboutMeStyle id="about-me">
             <div className="title">

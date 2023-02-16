@@ -1,10 +1,11 @@
 import styled from "styled-components";
-import { secondaryColor, textColor } from "../../assets/styles/colors";
+import { primaryTextColor, secondaryBrightColor, secondaryDarkColor } from "../../assets/styles/colors";
+
 
 const AboutMeStyle = styled.section`
     width: 100vw;
     min-height: 100vh;
-    background-color: ${secondaryColor};
+    background-color: ${props => props.theme[0] === "dark" ? secondaryDarkColor : secondaryBrightColor};
     position: relative;
     display: flex;
     flex-direction: column;
@@ -15,7 +16,7 @@ const AboutMeStyle = styled.section`
         top: 15%;
     }
     h1 {
-        color: ${textColor};
+        color: ${primaryTextColor};
         text-align: center;
         font-size: 2.6em;
         font-family: "Inter Tight";
@@ -37,7 +38,7 @@ const AboutMeStyle = styled.section`
         h2 {
             font-family: "Roboto";
             font-size: 1.6em;
-            color: ${textColor};
+            color: ${primaryTextColor};
         }
     }
     @media (max-width: 800px) {

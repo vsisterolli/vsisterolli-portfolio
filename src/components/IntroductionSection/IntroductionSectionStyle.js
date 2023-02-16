@@ -1,17 +1,17 @@
 import styled from "styled-components";
-import { primaryColor, secondaryColor, textColor } from "../../assets/styles/colors";
+import {brightBorderColor, darkBorderColor, primaryBrightColor, primaryDarkColor, primaryTextColor, secondaryBrightColor, secondaryDarkColor, secondaryTextColor} from "../../assets/styles/colors";
 
 const IntroductionSectionStyle = styled.section`
     width: 100vw;
     min-height: 100vh;
-    background-color: ${primaryColor};
+    background-color: ${props => props.theme[0] === "dark" ? primaryDarkColor : primaryBrightColor};
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     h1 {
-        color: ${textColor};
+        color: ${props => props.theme[0] === "dark" ? primaryTextColor : secondaryTextColor};
         text-align: center;
         font-size: 2.6em;
         font-family: "Noto Sans";
@@ -22,14 +22,14 @@ const IntroductionSectionStyle = styled.section`
         align-items: center;
         position: absolute;
         padding: 15px 30px;
-        border: 1px silver solid;
-        text-decoration: none   ;
+        border: 1px ${props => props.theme[0] === "dark" ? darkBorderColor : brightBorderColor}; solid;
+        text-decoration: none;
         border-radius: 80px;
         top: calc(100vh - 140px);
-        color: ${textColor};
+        color: ${primaryTextColor};
         font-family: "Roboto";
         font-size: 2em;
-        background-color: ${secondaryColor};
+        background-color: ${props => props.theme[0] === "dark" ? secondaryDarkColor : secondaryBrightColor};
         :hover {
             cursor: pointer;
         }

@@ -1,25 +1,35 @@
 import styled from "styled-components";
-import { bordersColor, textColor } from "../../assets/styles/colors";
+import { brightBorderColor, darkBorderColor, primaryTextColor } from "../../assets/styles/colors";
 
 const ProjectStyle = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-basis: 30%;
-    margin: 20px;
+    flex-basis: 25%;
+    margin: 40px;
     width: 160px;
+    position: relative;
+    .modal-overlay {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
     h2 {
         font-family: "Roboto";
-        color: ${textColor};
+        color: ${primaryTextColor};
         text-align: center;
         font-size: 1.6em;
         margin-bottom: 12px;
     }
-    div {
+    .portrait {
         width: 15em;
         height: 15em;
-        border: solid 2px ${bordersColor};
+        border: solid 2px ${props => props.theme[0] === "dark" ? darkBorderColor : brightBorderColor};
         border-radius: 20%;
         outline: 1px solid black;
         background-image: url("https://i.imgur.com/oKLnL01.png");

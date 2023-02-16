@@ -5,7 +5,9 @@ import ProjectsStyle from "./ProjectsStyle";
 export default function Projects() {
     return (
         <ProjectsStyle id="projects">
-            <h1>PROJETOS</h1>
+            <div className="title">
+                <h1>PROJETOS</h1>
+            </div>
             <div className="projects">
                 <Project/>
                 <Project/>

@@ -1,14 +1,14 @@
 import styled from "styled-components"
-import { secondaryColor, textColor } from "../../assets/styles/colors";
+import { primaryTextColor, secondaryBrightColor, secondaryDarkColor } from "../../assets/styles/colors";
 
 const HeaderStyle = styled.header`
     position: fixed;
     top: 0;
     left: 0;
-    color: ${textColor};
+    color: ${primaryTextColor};
     z-index: 1;
 
-    background-color: ${secondaryColor};
+    background-color: ${props => props.theme[0] === "dark" ? secondaryDarkColor : secondaryBrightColor };
     border-bottom: solid 1px silver;
     height: 80px;
     width: 100vw;
@@ -25,10 +25,17 @@ const HeaderStyle = styled.header`
         cursor: pointer;
     }
     h1 {
-        color: ${textColor};
+        color: white;
         font-size: 2.6em;
         font-family: "Inter Tight";
         font-weight: 700;
+    }
+    .options {
+        display: flex;
+        align-items: center;
+        ion-icon {
+            font-size: 2.6em;
+        }
     }
     @media (max-width: 900px) {
         h1 {

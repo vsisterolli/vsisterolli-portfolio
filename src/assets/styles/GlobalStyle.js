@@ -117,6 +117,12 @@ const GlobalStyle = createGlobalStyle`
 	        -webkit-animation: slide-fwd-center 3s ease-out infinite both;
 	        animation: slide-fwd-center 3s ease-out infinite both;
     }
+    .big-on-hover {
+        :hover {
+            -webkit-animation: slide-fwd-center 3s ease-out infinite both;
+	        animation: slide-fwd-center 3s ease-out infinite both;
+        }
+    }
 
     * {
         scrollbar-width: thin;

@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { primaryColor, secondaryColor, textColor } from "../../assets/styles/colors";
+import { primaryBrightColor, primaryDarkColor, primaryTextColor, secondaryBrightColor, secondaryDarkColor, secondaryTextColor } from "../../assets/styles/colors";
 
 const TecnologiesStyle = styled.section`
     min-height: 100vh;
     width: 100vw;
-    background-color: ${primaryColor};
+    background-color: ${props => props.theme[0] === "dark" ? primaryDarkColor : primaryBrightColor};
     padding-top: 110px;
     position: relative;
     display: flex;
@@ -17,13 +17,13 @@ const TecnologiesStyle = styled.section`
         width: 100%;
     }
     h1 {
-        color: ${textColor};
+        color: ${props => props.theme[0] === "dark" ? primaryTextColor : secondaryTextColor};
         text-align: center;;
         font-size: 2.6em;
         font-family: "Inter Tight";
     }
     h2 {
-        color: ${textColor};
+        color: ${props => props.theme[0] === "dark" ? primaryTextColor : secondaryTextColor};
         text-align: center;
         margin-top: 8px;
         font-size: 1.4em;
@@ -40,13 +40,12 @@ const TecnologiesStyle = styled.section`
         h3 {
             font-size: 1.4em;
             font-family: "Noto Sans";  
-            color: ${textColor};
+            color: ${props => props.theme[0] === "dark" ? primaryTextColor : secondaryTextColor};
             text-align: center;
         }
     }
     .tecnologies-container {
         flex-basis: 30%;
-        background-color: ${primaryColor};
         margin-bottom: 50px;
         h3 {
             margin-bottom: 12px;
@@ -71,7 +70,8 @@ const TecnologiesStyle = styled.section`
         align-items: center;
         justify-content: space-evenly;
         border-radius: 800px;
-        background-color: ${secondaryColor};
+        color: ${primaryTextColor};
+        background-color: ${props => props.theme[0] === "dark" ? secondaryDarkColor : secondaryBrightColor};
         padding: 5px 20px;
     }
     .tecnology {
@@ -86,7 +86,7 @@ const TecnologiesStyle = styled.section`
             font-size: 0.9em;
         }
         font-family: "Noto Sans";  
-        color: ${textColor};
+        color: white;
         text-align: center;        
     }
     @media (max-width: 940px) {

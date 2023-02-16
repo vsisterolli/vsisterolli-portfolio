@@ -72,7 +72,7 @@ export default function Tecnologies() {
                             <img src={sqlIcon}/>
                         </div>
                         <div className="tecnology">
-                            <h4>PostgresSQL</h4>
+                            <h4>PostgreSQL</h4>
                             <img src={postgresIcon}/>
                         </div>
                         <div className="tecnology">
