@@ -1,23 +1,23 @@
-import Modal from 'react-modal';
+import Modal from "react-modal";
 import React from "react";
-import styled from 'styled-components';
-import { brightAnchorColor, darkAnchorColor, primaryDarkColor, primaryTextColor, secondaryBrightColor, secondaryDarkColor, secondaryTextColor } from '../../assets/styles/colors';
+import styled from "styled-components";
+import { brightAnchorColor, darkAnchorColor, primaryDarkColor, primaryTextColor, secondaryBrightColor } from "../../assets/styles/colors";
 
 function ModalAdapter ({ className, modalClassName, ...props }) {
 
-    return (
-        <Modal
-          className={modalClassName}
-          portalClassName={className}
-          {...props}
-        />    
-    )
+	return (
+		<Modal
+			className={modalClassName}
+			portalClassName={className}
+			{...props}
+		/>    
+	);
 }
 
 const StyledModal = styled(ModalAdapter).attrs({
-    overlayClassName: 'Overlay',
-    modalClassName: 'Modal'
-  })`
+	overlayClassName: "Overlay",
+	modalClassName: "Modal"
+})`
     .Modal {
       border-radius: 8px;
       position: fixed;
@@ -83,6 +83,6 @@ const StyledModal = styled(ModalAdapter).attrs({
     }
     overflow-y: scroll;
     overflow-x: hidden;
-`
+`;
 
 export default StyledModal;

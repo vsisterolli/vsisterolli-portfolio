@@ -58,6 +58,6 @@ const AboutMeStyle = styled.section`
     @media (max-width: 800px) {
         padding-top: 200px;
     }
-`
+`;
 
 export default AboutMeStyle;

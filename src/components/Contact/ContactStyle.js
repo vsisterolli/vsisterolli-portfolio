@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {brightBorderColor, darkBorderColor, primaryBrightColor, primaryDarkColor, primaryTextColor, secondaryBrightColor, secondaryDarkColor, secondaryTextColor} from "../../assets/styles/colors";
+import { primaryBrightColor, primaryDarkColor, primaryTextColor, secondaryTextColor} from "../../assets/styles/colors";
 
 const ContactStyle = styled.section`
     width: 100vw;
@@ -46,6 +46,6 @@ const ContactStyle = styled.section`
             margin-bottom: 7px;
         }
     }
-`
+`;
 
 export default ContactStyle;

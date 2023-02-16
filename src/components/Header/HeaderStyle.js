@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 import { primaryTextColor, secondaryBrightColor, secondaryDarkColor } from "../../assets/styles/colors";
 
 const HeaderStyle = styled.header`
@@ -61,6 +61,6 @@ const HeaderStyle = styled.header`
             display: none;
         }
     }
-`
+`;
 
 export default HeaderStyle;

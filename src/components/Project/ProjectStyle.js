@@ -37,6 +37,6 @@ const ProjectStyle = styled.div`
         background-position: center;
         background-repeat: no-repeat;
     }
-`
+`;
 
 export default ProjectStyle;

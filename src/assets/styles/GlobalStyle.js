@@ -149,6 +149,6 @@ const GlobalStyle = createGlobalStyle`
     :root {
         --toastify-font-family: "Roboto";
     }
-`
+`;
 
 export default GlobalStyle;

@@ -8,7 +8,7 @@ export const darkBorderColor = "silver";
 export const brightBorderColor = "#13293D";
 
 export const primaryTextColor = "white";
-export const secondaryTextColor = "#006494"
+export const secondaryTextColor = "#006494";
 
 export const darkAnchorColor = "#659CCA";
 export const brightAnchorColor = "#FFB703";

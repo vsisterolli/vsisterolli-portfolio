@@ -41,6 +41,6 @@ const ProjectsStyle = styled.section`
         justify-content: space-evenly;
         cursor: pointer;
     }
-`
+`;
 
 export default ProjectsStyle;

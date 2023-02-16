@@ -37,6 +37,6 @@ const IntroductionSectionStyle = styled.section`
             margin-bottom: 8px;
         }
     }
-`
+`;
 
 export default IntroductionSectionStyle;

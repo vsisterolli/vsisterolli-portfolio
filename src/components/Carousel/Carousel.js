@@ -1,17 +1,6 @@
 import React, { useState } from "react";
-import styled, { keyframes } from "styled-components";
-const images = [
-  "https://i.imgur.com/ZYncCQ8.png",
-  "https://i.imgur.com/qQ1m4kC.png",
-  "https://i.imgur.com/2bPnKY2.png",
-  "https://i.imgur.com/oUYrDoW.png",
-  "https://i.imgur.com/8hYQzQd.png"
-];
+import styled from "styled-components";
 
-const slide = keyframes`
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-200%); }
-`;
 
 const Wrapper = styled.div`
   position: relative;
@@ -24,6 +13,12 @@ const Wrapper = styled.div`
     height: auto;
     margin: 0 auto;  
   }
+  ion-icon {
+    color: white;
+    font-size: 2.6em;
+    align-self: center;
+    margin: 20px;
+  }
   @media (max-width: 700px) {
      flex-direction: row;
      img {
@@ -34,16 +29,6 @@ const Wrapper = styled.div`
 
 const SlideContainer = styled.div`
   display: flex;
-`;
-
-const Slide = styled.div`
-  width: 33.33%;
-`;
-
-const Image = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 `;
 
 const DotContainer = styled.div`
@@ -71,24 +56,30 @@ const Dot = styled.div`
 `;
 
 const Carousel = ({images}) => {
-  const [currentImage, setCurrentImage] = useState(0);
+	const [currentImage, setCurrentImage] = useState(0);
 
-  const handleDotClick = (index) => {
-    setCurrentImage(index);
-  };
+	const handleDotClick = (index) => {
+		setCurrentImage(index);
+	};
+    
+    const handleChange = (value) => {
+        setCurrentImage((currentImage + value + images.length) % images.length)
+    }
 
-  return (
-    <Wrapper currentImage={currentImage}>
-      <SlideContainer>
-        <img src={images[currentImage]} alt="website slide-show"/>
-      </SlideContainer>
-      <DotContainer>
-        {images.map((_, index) => (
-          <Dot key={index} active={index === currentImage} onClick={() => handleDotClick(index)} />
-        ))}
-      </DotContainer>
-    </Wrapper>
-  );
+	return (
+		<Wrapper currentImage={currentImage}>
+			<SlideContainer>
+                <ion-icon classname="left" onClick={() => handleChange(-1)} name="chevron-back-circle-outline"></ion-icon>
+				<img src={images[currentImage]} alt="website slide-show"/>
+                <ion-icon className="right" onClick={() => handleChange(1)} name="chevron-forward-circle-outline"></ion-icon>
+			</SlideContainer>
+			<DotContainer>
+				{images.map((_, index) => (
+					<Dot key={index} active={index === currentImage} onClick={() => handleDotClick(index)} />
+				))}
+			</DotContainer>
+		</Wrapper>
+	);
 };
 
 export default Carousel;
