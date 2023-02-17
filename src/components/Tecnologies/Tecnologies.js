@@ -78,7 +78,7 @@ export default function Tecnologies() {
 					</div>
 				</div>
 				<div className="tecnologies-container">
-					<h3>{language === "en" ? "Databases" : "Banco de dados"}</h3>
+					<h3>{language === "en" ? "Databases/ORMs" : "Banco de dados e ORMs"}</h3>
 					<div className="icons">
 						<div className="tecnology">
 							<h4>SQL</h4>
